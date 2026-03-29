@@ -11,7 +11,9 @@
 
 ## 📸 System Interface
 <p align="center">
-  <img src="./assets/pareit-dashboard.png" width="850" alt="Pareit Platform Preview">
+  <img src="https://github.com/user-attachments/assets/102a94f3-84e8-46e3-b594-f803aa7e239b" width="850" alt="Pareit Platform Preview">
+   <img src="https://github.com/user-attachments/assets/a352b6ad-1145-4274-ad13-956ae7afc100" width="850" alt="Pareit Platform Preview">
+   <img src="https://github.com/user-attachments/assets/f7d1569b-84cc-41d5-b69b-eeb56af9d7ed" width="850" alt="Pareit Platform Preview">
 </p>
 
 ---
