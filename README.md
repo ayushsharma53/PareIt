@@ -41,7 +41,7 @@
 ## 🛠️ Technical Implementation
 | Layer | Technologies |
 | :--- | :--- |
-| **Frontend** | React.js, Tailwind CSS, Redux (State Management) |
+| **Frontend** | React.js,CSS|
 | **Backend** | Node.js, Express.js |
 | **Database** | MongoDB Atlas (Complex Schemas for User-Provider relations) |
 | **Auth** | JWT-based **Role-Based Access Control (RBAC)** |
