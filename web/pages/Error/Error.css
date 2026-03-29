@@ -1,0 +1,76 @@
+.nf-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.nf-content {
+  max-width: 500px;
+}
+
+.nf-error-code {
+  font-size: 8rem;
+  margin: 0;
+  font-weight: 800;
+  background: linear-gradient(180deg, #4a90e2, #214d82);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+}
+
+.nf-divider {
+  width: 60px;
+  height: 4px;
+  background: #4a90e2;
+  margin: 20px auto;
+  border-radius: 2px;
+}
+
+.nf-title {
+  font-size: 2rem;
+  margin: 10px 0;
+  color: #fff;
+}
+
+.nf-description {
+  color: #888;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.nf-home-btn {
+  display: inline-block;
+  background: #4a90e2;
+  color: white;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
+}
+
+.nf-home-btn:hover {
+  background: #357abd;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(74, 144, 226, 0.4);
+}
+
+/* Optional: Add a subtle pulse to the 404 text */
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.8; }
+  100% { opacity: 1; }
+}
+
+.nf-error-code {
+  animation: pulse 3s infinite ease-in-out;
+}

@@ -1,0 +1,133 @@
+.mb-bookings-container {
+  padding: 40px;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 123vh;
+  overflow-y: auto;
+}
+
+.mb-bookings-header {
+  margin-bottom: 30px;
+  flex-shrink: 0;
+}
+
+.mb-bookings-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #4a90e2;
+}
+
+.mb-bookings-header p {
+  color: #888;
+  margin-top: 5px;
+}
+
+.mb-scroll-wrapper {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+/* Custom Scrollbar */
+.mb-scroll-wrapper::-webkit-scrollbar { width: 6px; }
+.mb-scroll-wrapper::-webkit-scrollbar-track { background: transparent; }
+.mb-scroll-wrapper::-webkit-scrollbar-thumb { 
+  background: #333; 
+  border-radius: 10px; 
+}
+
+.mb-bookings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-bottom: 40px;
+}
+
+.mb-booking-card {
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.mb-booking-card:hover { 
+  border-color: #4a90e2; 
+  background: #161616;
+}
+
+.mb-booking-info {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.mb-booking-info img {
+  width: 65px;
+  height: 65px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 1px solid #333;
+}
+
+.mb-booking-info h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.mb-service-type { 
+  color: #4a90e2; 
+  font-size: 0.9rem; 
+  font-weight: bold; 
+  margin: 4px 0;
+}
+
+.mb-datetime { 
+  color: #888; 
+  font-size: 0.85rem; 
+  margin: 0;
+}
+
+.mb-booking-status {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.mb-status-badge {
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.mb-details-btn {
+  background: transparent;
+  border: 1px solid #333;
+  color: #ccc;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: 0.3s;
+}
+
+.mb-details-btn:hover {
+  background: #222;
+  color: white;
+  border-color: #555;
+}
+
+.mb-loader, .mb-no-bookings {
+  text-align: center;
+  padding: 50px;
+  color: #888;
+}

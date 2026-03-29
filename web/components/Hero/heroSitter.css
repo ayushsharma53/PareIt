@@ -1,0 +1,87 @@
+.form-container {
+  background: #000;
+  color: white;
+  padding: 13px;
+  width: 100vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.provider-onboarding-form {
+  background: #1e1e1e;
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 100%;
+  width: 100;
+  border: 1px solid #333;
+  max-height: 100%;
+  overflow-x: hidden;
+  /* Optional: smooth scrolling */
+  scroll-behavior: smooth;
+}
+
+h2 { color: #4a90e2; margin-bottom: 25px; text-align: center; }
+h3 { color: #888; font-size: 1.1rem; margin: 20px 0 10px; border-bottom: 1px solid #333; padding-bottom: 5px; }
+
+.input-group, .geo-group {
+  display: grid;
+  grid-template-columns: 65vh 65vh;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"] {
+  background: #111;
+  border: 1px solid #333;
+  padding: 12px;
+  border-radius: 8px;
+  color: white;
+  outline: none;
+}
+
+.full-width { width: 100%; margin-top: 10px; }
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.checkbox-card {
+  background: #252525;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+}
+
+.file-input {
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hint { font-size: 0.8rem; color: #4a90e2; }
+
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  background: #4a90e2;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover { background: #357abd; }

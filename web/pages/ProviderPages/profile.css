@@ -1,0 +1,219 @@
+.profile-container {
+  padding: 4vh;
+  color: white;
+  max-width: 120vh;
+  margin: 0 auto;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background: #1e1e1e;
+  padding: 30px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  border: 1px solid #333;
+}
+
+.profile-main-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #4a90e2;
+}
+
+.price-tag {
+  margin-left: auto;
+  color: aliceblue;
+  text-align: right;
+  background: #4a90e2;
+  padding: 15px 25px;
+  border-radius: 15px;
+}
+
+.price-tag span { font-size: 1.8rem; font-weight: bold; display: block; }
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+}
+
+.info-card {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #333;
+}
+
+.service-tag {
+  display: inline-block;
+  background: #333;
+  padding: 8px 15px;
+  border-radius: 20px;
+  margin: 5px;
+  font-size: 0.9rem;
+  color: #4a90e2;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.gallery-img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid #333;
+  transition: transform 0.3s;
+}
+
+.gallery-img:hover { transform: scale(1.05); }
+
+
+.gallery-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.add-img-btn {
+  background: #4a90e2;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.gallery-img {
+  cursor: zoom-in;
+  transition: transform 0.2s;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
+/* Modal Styling */
+.image-popup-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3000;
+  cursor: zoom-out;
+}
+
+.popup-content img {
+  max-width: 90vw;
+  max-height: 85vh;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.close-popup {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Price Editing Styles */
+.price-tag-container {
+  display: flex;
+  align-items: center;
+}
+
+.price-tag {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.price-tag:hover {
+  transform: scale(1.05);
+}
+
+.price-edit-box {
+  background: #1a1a1a;
+  padding: 10px;
+  border-radius: 12px;
+  display: flex;
+  gap: 8px;
+  border: 1px solid #4a90e2;
+}
+
+.price-input {
+  width: 80px;
+  background: #000;
+  border: 1px solid #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.price-save-btn {
+  background: #4a90e2;
+  color: white;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.price-cancel-btn {
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+/* Gallery Item Wrapper for Delete Button */
+.gallery-item-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.delete-img-overlay {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(244, 67, 54, 0.8);
+  color: white;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.gallery-item-wrapper:hover .delete-img-overlay {
+  opacity: 1;
+}
+.header-info{
+  margin-right: auto;
+}

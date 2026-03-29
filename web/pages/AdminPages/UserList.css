@@ -1,0 +1,172 @@
+/* Container & Layout */
+.um-main-content {
+  padding: 2rem;
+  color: #e0e0e0;
+  margin-left: 43vh;
+  overflow-y: auto;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.um-dashboard-header {
+  margin-bottom: 2rem;
+  border-left: 4px solid #4a90e2;
+  padding-left: 1.5rem;
+}
+
+.um-dashboard-header h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  color: #ffffff;
+}
+
+.um-subtitle {
+  color: #888;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* Table Styling */
+.um-table-wrapper {
+  background: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #333;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2.5rem;
+}
+
+.um-admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.um-admin-table thead tr {
+  background-color: #252525;
+  color: #4a90e2;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.um-admin-table th, 
+.um-admin-table td {
+  padding: 1.2rem 1.5rem;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.um-admin-table tbody tr:hover {
+  background-color: #222;
+  transition: background 0.2s ease;
+}
+
+/* User Info Cell */
+.um-td-user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.um-td-user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #333;
+}
+
+.um-td-user span {
+  font-weight: 500;
+  color: #fff;
+}
+
+/* Badges */
+.um-badge {
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.um-badge.um-provider {
+  background: rgba(74, 144, 226, 0.15);
+  color: #4a90e2;
+  border: 1px solid rgba(74, 144, 226, 0.3);
+}
+
+.um-badge.um-customer {
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+/* Action Buttons */
+.um-view-btn {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.um-view-btn:hover {
+  background-color: #357abd;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+}
+
+.um-no-action {
+  color: #555;
+  font-style: italic;
+  font-size: 0.85rem;
+}
+
+/* Custom Scrollbar */
+.um-table-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+.um-table-wrapper::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+.um-table-wrapper::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+  .um-admin-table {
+    display: block;
+    overflow-x: auto;
+  }
+  .um-main-content {
+    padding: 1rem;
+    margin-left: 0; /* Resetting sidebar margin on mobile if needed */
+  }
+}
+.um-badge-um-service {
+  display: inline-flex;
+  flex-wrap: wrap; /* Allows multiple services to wrap */
+  gap: 5px; /* Space between tags */
+}
+
+/* Style for individual items inside the span */
+.um-badge-um-service > span {
+  background-color: #20272f; /* Light blue background */
+  color: #2f86e9; /* Dark blue text */
+  padding: 4px 8px;
+  border-radius: 12px;
+  border-color: #222;
+  font-size: 0.85em;
+  font-weight: 500;
+  display: inline-block;
+  border: 1px solid #b2ebf2;
+}

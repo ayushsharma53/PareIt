@@ -1,0 +1,23 @@
+.requests-container {width: 100%; padding: 20px; color: white; }
+
+.request-card {
+  background: #111;
+  border: 1px solid #333;
+  margin-bottom: 15px;
+  width: 100vh;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.approve-btn { background: #4caf50; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; margin-right: 10px;}
+.reject-btn { background: #f44336; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; }
+
+.status-text.confirmed { color: #4caf50; font-weight: bold; }
+.status-text.cancelled { color: #f44336; font-weight: bold; }
+.sr-noreq{
+  color: #636262;
+}

@@ -1,0 +1,388 @@
+.main-content {
+  /* margin: 0px; */
+  display: flex;
+  height: 100vh;
+  width: 100vh;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* justify-content: center; */
+  background-color: #000;
+  color: white;
+  margin-left: 10vh;
+}
+
+.top-badge {
+  background: #1e1e1e;
+  padding: 5px 15px;
+  border-radius: 20px;
+  display: flex;
+  gap: 10px;
+  font-size: 0.8rem;
+  margin-bottom: 40px;
+}
+
+.badge-new {
+  background: #4a90e2;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.hero-section {
+  text-align: center;
+}
+
+.hero-logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin: 10px 0;
+}
+
+.subtitle {
+  color: #888;
+  font-size: 1.2rem;
+}
+
+.description {
+  color: #666;
+  margin-top: 5px;
+}
+
+
+.search-container {
+  width: 100%;
+  max-width: 600px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #000000;
+  padding: 6px 20px 6px 10px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #333;
+  position: relative;
+}
+.search-box input {
+  background: transparent;
+  border: none;
+  color: white;
+  flex: 1;
+  outline: none;
+}
+
+.send-btn {
+  background: #4a90e2;
+  color: white;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.send-btn:hover{
+  background-color: #3483dc;
+}
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.breed-tag {
+  background: transparent;
+  border: 1px solid #333;
+  color: #ccc;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+/* glow  button */
+.glow-on-hover-div{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 1vh 0 4vh 0;
+}
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.dropdown {
+  padding: 15px 25px;
+  flex: 1;
+  color: rgb(240, 236, 236);
+  position: relative;
+  perspective: 1000px; /* Required for 3D effects */
+  z-index: 100;
+  cursor: pointer;
+}
+
+/* The Menu Base State */
+.dropdown_menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none; /* Hidden by default */
+  background-color: #111111;
+  transform-origin: top center;
+}
+
+/* Hover Trigger Logic */
+.dropdown:hover 
+.dropdown_menu--animated {
+  display: block;
+}
+
+.dropdown:hover 
+.dropdown_menu-9 {
+  animation: growOut 300ms ease-in-out forwards;
+}
+
+.dropdown_menu li {
+  padding: 12px 20px;
+  color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgba(28, 28, 28, 0.1);
+  transition: background 0.4s;
+}
+
+.dropdown_menu li:hover {
+  background: hsl(0, 1%, 16%);
+}
+
+/* --- DROPDOWN 9 ANIMATION --- */
+@keyframes growOut {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Button Styling */
+.send-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4a90e2;
+  border: none;
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 8 8px 8px 8;
+}
+.drop-down-selected-text{
+  padding: 1vh;
+  border-radius: 8px;
+  background-color: #141313;
+}
+
+
+.results-wrapper {
+  width: 90%;
+  margin: 40px auto;
+  min-height:20vh;
+}
+
+.search-results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+  /* Animating the entrance */
+  animation: fadeIn 0.5s ease-in;
+}
+
+.result-card {
+  background: #1a1a1a;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s;
+  border: 1px solid #333;
+}
+
+.result-card:hover {
+  transform: translateY(-10px);
+  border-color: #4a90e2;
+}
+
+.result-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-info {
+  padding: 15px;
+}
+
+.price-tag {
+  color: #25d366;
+  font-weight: bold;
+  display: block;
+  margin-top: 5px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+.results-wrapper {
+  width: 100%;
+  max-width: 1000px; 
+  margin: 40px auto;
+  background: #111; /* Dark background like the table-wrapper */
+  border-radius: 20px;
+  border: 1px solid #2d333a;
+  padding: 1.5rem;
+  /* height: 100vh; */
+  /* FIXED SCROLL BLOCK LOGIC */
+  /* max-height: 500vh; Limit height so it doesn't expand forever */
+  overflow-y: auto; 
+  position: relative;
+}
+
+/* Grid Layout inside the scrollable wrapper */
+.search-results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  animation: fadeIn 0.5s ease-in;
+}
+
+/* Result Cards styled like the Admin Stat Cards */
+.result-card {
+  background: #1a1d21;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #333;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.result-card:hover {
+  transform: translateY(-5px);
+  border-color: #4a90e2;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.result-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-bottom: 1px solid #2d333a;
+}
+
+.card-info {
+  padding: 12px;
+}
+
+.card-info h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.card-info p {
+  margin: 5px 0;
+  color: #94a3b8;
+  font-size: 0.85rem;
+}
+
+.price-tag {
+  color: #4a90e2; /* Matching your theme blue */
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/* Custom Scrollbar for the Results Wrapper */
+.results-wrapper::-webkit-scrollbar {
+  width: 6px;
+}
+.results-wrapper::-webkit-scrollbar-track {
+  background: #111;
+}
+.results-wrapper::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 10px;
+}
+
+

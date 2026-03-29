@@ -1,0 +1,125 @@
+/* Sidebar Alignment & Layout */
+.actlog-page-container {
+  margin-left: 43vh;
+  padding: 2.3rem;
+  color: #ffffff;
+  min-height: 100vh;
+  background-color: #000000;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.actlog-header-section {
+  margin-bottom: 2.5rem;
+  border-left: 4px solid #4a90e2;
+
+  padding-left: 1.5rem;
+}
+
+.actlog-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.actlog-subtitle {
+  color: #888;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* Timeline Wrapper */
+.actlog-timeline-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 1000px;
+  animation: actlogFadeIn 0.5s ease-in-out;
+}
+
+/* Individual Log Cards */
+.actlog-item-card {
+  background: #111111;
+  border: 1px solid #222222;
+  border-radius: 10px;
+  display: flex;
+  overflow: hidden;
+  width: 110vh;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.actlog-item-card:hover {
+  transform: translateX(8px);
+  border-color: #333333;
+  background: #151515;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.actlog-status-bar {
+  width: 5px;
+  flex-shrink: 0;
+}
+
+.actlog-body {
+  padding: 1.25rem 1.5rem;
+  flex: 1;
+}
+
+.actlog-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.actlog-category {
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.actlog-timestamp {
+  font-size: 0.8rem;
+  color: #555555;
+  font-family: 'Courier New', Courier, monospace; /* Monospace for alignment */
+}
+
+.actlog-text {
+  color: #cccccc;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* State Handlers */
+.actlog-loader, .actlog-empty {
+  padding: 3rem;
+  text-align: center;
+  color: #555;
+  font-style: italic;
+  border: 1px dashed #333;
+  border-radius: 10px;
+}
+
+@keyframes actlogFadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+  .actlog-page-container {
+    margin-left: 0; /* Stack on mobile if sidebar moves */
+    padding: 1rem;
+  }
+  
+  .actlog-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}

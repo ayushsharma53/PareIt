@@ -1,0 +1,106 @@
+.chat-page-container {
+  display: flex;
+  height: calc(100vh - 60px); /* Adjust based on navbar height */
+  background: #0a0a0a;
+  color: white;
+  border-radius: 20px;
+  margin-top: 2vh;
+  width: 120vh;
+}
+
+.leads-sidebar {
+  padding: 10px;
+  width: 350px;
+  border-right: 1px solid #222;
+  display: flex;
+  flex-direction: column;
+}
+
+.scrollable-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+/* Custom Scrollbar */
+.scrollable-list::-webkit-scrollbar { width: 4px; }
+.scrollable-list::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
+
+.lead-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  background: #111;
+  border: 1px solid transparent;
+}
+
+.lead-item:hover { border-color: #4a90e2; }
+
+.lead-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.lead-details-view {
+  flex: 1;
+  overflow-y: auto;
+  padding: 30px;
+}
+
+.lead-detail-card {
+  background: #161616;
+  border: 1px solid #222;
+  padding: 25px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.whatsapp-btn {
+  background: #25d366;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.request-specs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  border-top: 1px solid #222;
+  padding-top: 20px;
+}
+
+.spec-item label {
+  display: block;
+  color: #888;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+
+.status-pill {
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  background: #333;
+}
+
+.status-pill.confirmed { background: rgba(37, 211, 102, 0.2); color: #25d366; }
